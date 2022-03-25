@@ -1,0 +1,36 @@
+.about {
+    margin: 0 auto;
+}
+
+.about-list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.about-list__item+.about-list__item {
+    margin-left: 30px;
+}
+
+.about-box {
+    position: relative;
+}
+
+.about-thumb {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.about-thumb__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 27px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-title-color);
+}
