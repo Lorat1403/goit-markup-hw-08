@@ -283,6 +283,7 @@ body {
   font-size: 28px;
   line-height: 1.17;
   text-align: center;
+  align-items: center;
   letter-spacing: 0.03em;
   color: var(--first-title-color);
   margin-bottom: 30px;
@@ -535,7 +536,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .command-list {
     flex-wrap: nowrap;
   }
@@ -614,6 +615,13 @@ body {
 
 .customers-list {
   display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1200px) {
+  .customers-list {
+    flex-wrap: nowrap;
+  }
 }
 
 .customers-list__item + .customers-list__item {
@@ -622,7 +630,7 @@ body {
 
 .customers-link {
   display: flex;
-  width: 170px;
+  width: 210px;
   height: 92px;
   box-sizing: border-box;
   border: 1px solid #afb1b8;
@@ -636,6 +644,18 @@ body {
 .customers-link:hover, .customers-link:focus {
   border-color: #2196f3;
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .customers-link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers-link {
+    width: 170px;
+  }
 }
 
 .customers-link__icons {
@@ -931,12 +951,44 @@ body {
 }
 
 .qualities-list {
-  display: flex;
   margin: 0 auto;
 }
 
-.qualities-list > .qualities-list__item {
-  flex-basis: calc(100% / 4);
+@media screen and (min-width: 768px) {
+  .qualities-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .qualities-list {
+    flex-wrap: nowrap;
+  }
+}
+
+.qualities-list__item {
+  width: 450px;
+  height: 226px;
+}
+
+@media screen and (min-width: 768px) {
+  .qualities-list__item {
+    width: 354px;
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .qualities-list__item {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .qualities-list > .qualities-list__item {
+    flex-basis: calc(100% / 4);
+  }
 }
 
 .qualities-list__title {
@@ -957,8 +1009,10 @@ body {
   text-align: left;
 }
 
-.qualities-list__item + .qualities-list__item {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .qualities-list__item + .qualities-list__item {
+    margin-left: 30px;
+  }
 }
 
 .q-icons {
