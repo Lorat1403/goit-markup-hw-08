@@ -11,14 +11,18 @@
 }
 
 .cap__title {
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
     text-align: center;
-    line-height: 1.36;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 30px;
+    @media screeen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .cap-thumb {
