@@ -509,6 +509,13 @@ body {
 
 .about {
   margin: 0 auto;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    display: flex;
+  }
 }
 
 .about-list {
@@ -668,8 +675,8 @@ body {
 
 .customers-link {
   display: flex;
-  width: 210px;
-  height: 92px;
+  width: calc(100% / 2);
+  height: auto;
   box-sizing: border-box;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -682,6 +689,13 @@ body {
 .customers-link:hover, .customers-link:focus {
   border-color: #2196f3;
   color: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .customers-link {
+    width: 210px;
+    height: 92px;
+  }
 }
 
 @media screen and (min-width: 768px) {
