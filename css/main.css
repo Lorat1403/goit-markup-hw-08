@@ -811,6 +811,7 @@ body {
 @media screen and (min-width: 768px) {
   .projects-list > .projects-list__item {
     flex-basis: calc(100% / 2 - var(--projects-list-gap));
+    margin-left: var(--projects-list-gap);
   }
 }
 
