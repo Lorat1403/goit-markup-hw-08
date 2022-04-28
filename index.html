@@ -53,15 +53,16 @@
           </svg>
         </button>
       </div>
-      <div class="menu-nav">
-        <button type="button" class="menu-close-btn">
-          <svg class="menu-close-btn__icon">
-            <use href="./images/symbol-defs.svg#close-black-18dp-2-1"></use>
-          </svg>
-        </button>
-        <ul class="menu-list">
-          <li class="menu-list__item">
-            <a href=" " class="menu-list__link current"> Студия </a>
+      <div class="menu-nav is-hidden" data-menu>
+        <div class="container">
+          <button type="button" class="menu-close-btn">
+            <svg class="menu-close-btn__icon">
+              <use href="./images/symbol-defs.svg#close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+          <ul class="menu-list">
+            <li class="menu-list__item">
+              <a href=" " class="menu-list__link current"> Студия </a>
                 </li>
                 <li class="menu-list__item">
                     <a href="./portfolio.html" class="menu-list__link"> Портфолио </a>
@@ -72,20 +73,16 @@
             </ul>
             <ul class="menu-links">
                 <li>
-                    <a href="mailto:info@devstudio.com " class="menu-links__mail">
-                        <svg class="menu-links__icon">
-                <use href="./images/symbol-defs.svg#envelope-1"></use>
-              </svg> info@devstudio.com
-                    </a>
-                </li>
-                <li>
-                    <a href="tel:+380991111111 " class="menu-links__tel"><svg class="menu-links__icon">
-                <use href="./images/symbol-defs.svg#smartphone-1"></use>
-              </svg>
-              +38 099 111 11 11</a
-            >
-          </li>
-        </ul>
+                    <a href="mailto:info@devstudio.com " class="menu-links__mail">info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380991111111 " class="menu-links__tel"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -617,6 +614,7 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
 </body>
 
 </html>
