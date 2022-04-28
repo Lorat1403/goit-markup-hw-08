@@ -763,12 +763,33 @@ body {
 
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-list {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-list {
+    margin-bottom: 50px;
+  }
 }
 
 .filter-list__item + .filter-list__item {
   margin-left: 8px;
+  margin-bottom: 21px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-list__item + .filter-list__item {
+    margin-bottom: 0px;
+  }
 }
 
 .filter-btn {
