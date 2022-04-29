@@ -118,13 +118,13 @@
 }
 
 .ft-form {
-    display: flex;
-    flex-direction: column;
-    width: 570px;
-    height: 86px;
+    // display: flex;
+    // flex-direction: column;
     @media screen and(min-width: 1200px) {
         display: inline-block;
         margin-left: 93px;
+        width: 570px;
+        height: 86px;
     }
 }
 
@@ -132,6 +132,7 @@
     display: flex;
     @media screen and(max-width: 1199px) {
         flex-direction: column;
+        padding-left: 50px;
     }
 }
 

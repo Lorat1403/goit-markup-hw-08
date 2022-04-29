@@ -1222,17 +1222,12 @@ body {
   fill: #ffffff;
 }
 
-.ft-form {
-  display: flex;
-  flex-direction: column;
-  width: 570px;
-  height: 86px;
-}
-
 @media screen and (min-width: 1200px) {
   .ft-form {
     display: inline-block;
     margin-left: 93px;
+    width: 570px;
+    height: 86px;
   }
 }
 
@@ -1243,6 +1238,7 @@ body {
 @media screen and (max-width: 1199px) {
   .footer-form {
     flex-direction: column;
+    padding-left: 50px;
   }
 }
 
