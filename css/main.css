@@ -90,7 +90,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .backdrop {
-    padding: 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -1351,7 +1352,9 @@ body {
 @media screen and (min-width: 768px) {
   .qualities-list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-left: -30px;
   }
 }
 
@@ -1374,9 +1377,10 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .qualities-list__item {
     width: 270px;
+    margin-left: 30px;
   }
 }
 
@@ -1389,6 +1393,7 @@ body {
 @media screen and (min-width: 1200px) {
   .qualities-list > .qualities-list__item {
     flex-basis: calc(100% / 4);
+    margin-left: 30px;
   }
 }
 
@@ -1418,12 +1423,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .qualities-list__item + .qualities-list__item {
-    margin-left: 15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
   .qualities-list__item + .qualities-list__item {
     margin-left: 30px;
   }
