@@ -95,6 +95,7 @@ body {
 }
 
 .modal {
+  position: absolute;
   background-color: #fff;
   border-radius: 4px;
   padding: 40px;
@@ -102,12 +103,10 @@ body {
 
 @media screen and (min-width: 768px) {
   .modal {
-    position: absolute;
     left: 50%;
     top: 50%;
     width: 450px;
     height: 609px;
-    padding: 40px;
     transform: translate(-50%, -50%) rotate(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -155,7 +154,7 @@ body {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
 }
 
@@ -222,7 +221,6 @@ body {
 }
 
 .check-field {
-  display: flex;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -232,12 +230,19 @@ body {
 }
 
 .check-field__label {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .check-field__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .check-field__input:checked + .check-field__label span {
@@ -253,9 +258,16 @@ body {
 
 .check-link {
   color: #2196f3;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .check-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-icon-check {
@@ -267,6 +279,12 @@ body {
   margin-right: 7px;
   margin-left: 14px;
   display: block;
+}
+
+.tumb-btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .modal-btn {
@@ -478,11 +496,13 @@ body {
 }
 
 .current {
-  position: relative;
   color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
+  .current {
+    position: relative;
+  }
   .current::after {
     content: "";
     position: absolute;
@@ -497,6 +517,7 @@ body {
 
 .menu-nav {
   position: fixed;
+  z-index: 10;
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
@@ -670,7 +691,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media screeen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .cap__title {
     font-size: 44px;
     line-height: 1.36;
@@ -762,22 +783,27 @@ body {
   .command-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .command-list {
     flex-wrap: nowrap;
+    margin-left: -30px;
   }
 }
 
-.command-list__item + .command-list__item {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .command-list__item + .command-list__item {
+    margin-left: 30px;
+  }
 }
 
-.command-list__item {
-  margin-bottom: 30px;
+@media screen and (max-width: 1199px) {
+  .command-list__item {
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
 }
 
 .command {
@@ -1338,6 +1364,7 @@ body {
 .qualities-list__item {
   width: 450px;
   height: 226px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
