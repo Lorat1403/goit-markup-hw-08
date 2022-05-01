@@ -11,7 +11,11 @@
 }
 
 .f-container {
-    // display: flex;
+    @media screen and(min-width: 768px) {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     @media screen and(min-width: 1200px) {
         display: flex;
     }
@@ -130,9 +134,12 @@
 
 .footer-form {
     display: flex;
-    @media screen and(max-width: 1199px) {
+    justify-content: center;
+    @media screen and(max-width: 767px) {
+        flex-wrap: wrap;
+    }
+    @media screen and(min-width:768px) and(max-width: 1199px) {
         flex-direction: column;
-        padding-left: 50px;
     }
 }
 
@@ -198,4 +205,10 @@
     width: 24px;
     height: 24px;
     margin-left: 10px;
+}
+
+.footer-btn {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }

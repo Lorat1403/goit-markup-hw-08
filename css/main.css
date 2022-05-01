@@ -236,7 +236,6 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
-  align-items: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -730,6 +729,7 @@ body {
 
 .about {
   margin: 0 auto;
+  padding-top: 0;
   display: none;
 }
 
@@ -784,19 +784,31 @@ body {
   .command-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .command-list {
     flex-wrap: nowrap;
-    margin-left: -30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .command-list__item + .command-list__item {
     margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768) {
+  .command-list__item {
+    width: calc(100%/2 -30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .command-list__item {
+    width: calc(100%/4- 30px);
   }
 }
 
@@ -1131,6 +1143,14 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .f-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .f-container {
     display: flex;
@@ -1260,12 +1280,18 @@ body {
 
 .footer-form {
   display: flex;
+  justify-content: center;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
+  .footer-form {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-form {
     flex-direction: column;
-    padding-left: 50px;
   }
 }
 
@@ -1341,8 +1367,10 @@ body {
   margin-left: 10px;
 }
 
-.qualities {
-  padding-bottom: 0;
+.footer-btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .qualities-list {
