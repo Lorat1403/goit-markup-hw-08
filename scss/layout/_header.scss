@@ -169,6 +169,10 @@
          letter-spacing: 0.02em;
          color: #212121;
          text-decoration: none;
+         &:hover,
+         &:focus {
+             color: #2196f3;
+         }
      }
      
      .menu-links__tel {
@@ -177,12 +181,10 @@
          letter-spacing: 0.02em;
          color: var(--first-text-color);
          text-decoration: none;
-         //  margin-bottom: 32px;
          transition-property: color;
          transition-duration: 250ms;
          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-         &:hover,
-         &:focus {
+         &:hover {
              color: #2196f3;
          }
      }
@@ -196,8 +198,7 @@
          transition-property: color;
          transition-duration: 250ms;
          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-         &:hover,
-         &:focus {
+         &:hover {
              color: #2196f3;
          }
      }
@@ -210,11 +211,9 @@
          height: 40px;
          display: block;
          margin-left: auto;
-         //  display: flex;
          justify-content: center;
          align-items: center;
          background: #ffffff;
-         //  // border: 1px solid rgba(0, 0, 0, 0.1);
          border: none;
          top: 8px;
          right: 8px;

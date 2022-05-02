@@ -9,12 +9,12 @@
         // width: calc(100% /2 -30px);
         margin-bottom: 30px;
         margin-left: 30px;
-        @media screen and (min-width: 768px) {
-            width: calc(100%/3 -30px);
-        }
-        @media screen and (min-width: 1200px) {
-            width: calc(100%/6 -30px);
-        }
+        // @media screen and (min-width: 768px) {
+        //     width: calc(100%/3 -30px);
+        // }
+        // @media screen and (min-width: 1200px) {
+        //     width: calc(100%/6 -30px);
+        // }
         .customers-list__item+.customers-list__item {
             margin-left: 30px;
         }

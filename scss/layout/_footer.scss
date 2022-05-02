@@ -2,6 +2,9 @@
     background-color: #2f303a;
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and(min-width: 1200px) {
+        padding-bottom: 0;
+    }
     .nav-logo {
         color: #ffffff;
         @media screen and(max-width: 1190px) {
@@ -12,13 +15,12 @@
 
 .f-container {
     @media screen and(min-width: 768px) {
-        display: inline-flex;
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    @media screen and(min-width: 1200px) {
-        display: flex;
-    }
+    // @media screen and(min-width: 1200px) {
+    //     display: flex;
 }
 
 .footer-container {
@@ -122,8 +124,11 @@
 }
 
 .ft-form {
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    @media screen and(min-width: 768px) {
+        margin-left: 16px;
+    }
     @media screen and(min-width: 1200px) {
         display: inline-block;
         margin-left: 93px;
