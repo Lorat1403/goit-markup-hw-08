@@ -2,7 +2,7 @@
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 19px;
     @media screen and (min-width: 768px) {
         margin-bottom: 30px;
         justify-content: center;
@@ -12,12 +12,15 @@
     }
 }
 
-.filter-list__item+.filter-list__item {
-    margin-left: 8px;
+.filter-list__item {
     margin-bottom: 21px;
     @media screen and (min-width: 768px) {
         margin-bottom: 0px;
     }
+}
+
+.filter-list__item+.filter-list__item {
+    margin-left: 8px;
 }
 
 .filter-btn {

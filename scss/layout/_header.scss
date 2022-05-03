@@ -181,9 +181,9 @@
          letter-spacing: 0.02em;
          color: var(--first-text-color);
          text-decoration: none;
-         transition-property: color;
-         transition-duration: 250ms;
-         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+         //  transition-property: color;
+         //  transition-duration: 250ms;
+         //  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
          &:hover {
              color: #2196f3;
          }
@@ -195,9 +195,9 @@
          letter-spacing: 0.02em;
          color: var(--first-text-color);
          text-decoration: none;
-         transition-property: color;
-         transition-duration: 250ms;
-         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+         //  transition-property: color;
+         //  transition-duration: 250ms;
+         //  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
          &:hover {
              color: #2196f3;
          }
@@ -205,7 +205,6 @@
      
      .menu-close-btn,
      .menu-open-btn {
-         position: absolute;
          border-radius: 50%;
          width: 40px;
          height: 40px;

@@ -566,9 +566,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--first-text-color);
   text-decoration: none;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-links__tel:hover {
@@ -581,9 +578,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--first-text-color);
   text-decoration: none;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-links__mail:hover {
@@ -592,7 +586,6 @@ body {
 
 .menu-close-btn,
 .menu-open-btn {
-  position: absolute;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -948,7 +941,7 @@ body {
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 19px;
 }
 
 @media screen and (min-width: 768px) {
@@ -964,15 +957,18 @@ body {
   }
 }
 
-.filter-list__item + .filter-list__item {
-  margin-left: 8px;
+.filter-list__item {
   margin-bottom: 21px;
 }
 
 @media screen and (min-width: 768px) {
-  .filter-list__item + .filter-list__item {
+  .filter-list__item {
     margin-bottom: 0px;
   }
+}
+
+.filter-list__item + .filter-list__item {
+  margin-left: 8px;
 }
 
 .filter-btn {
