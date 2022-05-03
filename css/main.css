@@ -562,6 +562,7 @@ body {
 
 .menu-links__tel {
   font-size: 34px;
+  font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--first-text-color);
@@ -574,6 +575,7 @@ body {
 
 .menu-links__mail {
   font-size: 24px;
+  font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--first-text-color);
@@ -643,8 +645,8 @@ body {
 
 .cap {
   display: flex;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin: 0 auto;
   max-width: 1600px;
   background-color: #c4c4c4;
@@ -668,6 +670,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .cap {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/бэкфон.jpg);
   }
 }
