@@ -32,7 +32,7 @@
      
      .header-list__item {
          display: none;
-         @media screen and(min-width: 768px) {
+         @media screen and (min-width: 768px) {
              display: flex;
          }
      }
@@ -73,7 +73,7 @@
              flex-wrap: wrap;
              margin-left: 84px;
          }
-         @media screen and(min-width:1200px) {
+         @media screen and (min-width:1200px) {
              margin-left: auto;
              flex-wrap: nowrap;
          }
@@ -94,7 +94,7 @@
          &:focus {
              color: #2196f3;
          }
-         @media screen and(min-width:1200px) {
+         @media screen and (min-width:1200px) {
              font-size: 14px;
              line-height: 1.14;
          }
@@ -102,7 +102,7 @@
      
      .header-links__tel {
          margin-top: 10px;
-         @media screen and(min-width: 1200px) {
+         @media screen and (min-width: 1200px) {
              margin-left: 50px;
          }
      }
@@ -112,7 +112,7 @@
          height: 10px;
          fill: currentColor;
          margin-right: 10px;
-         @media screen and(min-width: 1200px) {
+         @media screen and (min-width: 1200px) {
              width: 16px;
              height: 12px;
          }
@@ -182,9 +182,7 @@
          letter-spacing: 0.02em;
          color: var(--first-text-color);
          text-decoration: none;
-         //  transition-property: color;
-         //  transition-duration: 250ms;
-         //  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+         
          &:hover {
              color: #2196f3;
          }
@@ -197,9 +195,7 @@
          letter-spacing: 0.02em;
          color: var(--first-text-color);
          text-decoration: none;
-         //  transition-property: color;
-         //  transition-duration: 250ms;
-         //  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+         
          &:hover {
              color: #2196f3;
          }

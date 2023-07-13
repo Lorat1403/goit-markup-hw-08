@@ -1,9 +1,6 @@
-//    .qualities {
-//        padding-bottom: 0;
-//    }
+
 .qualities-list {
-    // margin: 0;
-    // padding-bottom: 30px;
+    
     width: 100%;
     margin-bottom: -30px;
     @media screen and (min-width: 768px) {
@@ -35,8 +32,7 @@
         &:not(:first-child) {
             margin-left: 30px;
         }
-        // flex-basis: calc(100% / 4);
-        // margin-left: 30px;
+       
     }
 }
 
@@ -62,14 +58,7 @@
     text-align: left;
 }
 
-// .qualities-list__item+.qualities-list__item {
-//     @media screen and (min-width: 768px) {
-//         margin-left: 30px;
-//     }
-//     //    @media screen and (min-width: 1200px) {
-//     //        margin-left: 30px;
-//     //    }
-// }
+
 .q-icons {
     display: flex;
     height: 120px;
