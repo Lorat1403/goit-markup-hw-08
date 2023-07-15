@@ -1300,11 +1300,19 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
 }
+.f-btn:hover, .f-btn:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(255, 247, 247, 0.8), 0px 4px 4px rgba(255, 247, 247, 0.8), 1px 4px 6px rgba(255, 247, 247, 0.8);
+  color: #2f303a;
+}
 
 .f-btn__icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
+}
+.f-btn__icon:hover, .f-btn__icon:focus {
+  fill: currentColor;
 }
 
 .footer-btn {
