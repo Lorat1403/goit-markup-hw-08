@@ -1311,9 +1311,6 @@ body {
   height: 24px;
   margin-left: 10px;
 }
-.f-btn__icon:hover, .f-btn__icon:focus {
-  fill: currentColor;
-}
 
 .footer-btn {
   display: flex;
