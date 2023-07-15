@@ -21,7 +21,7 @@
 .modal {
     position: absolute;
     background-color: #fff;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 40px;
     @media screen and (min-width: 768px) {
         left: 50%;
@@ -29,7 +29,7 @@
         width: 450px;
         height: 609px;
         transform: translate(-50%, -50%) rotate(0);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     @media screen and (min-width: 1200px) {
         width: 528px;
@@ -38,7 +38,7 @@
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(50%, 50%) rotate(-270deg);
+    transform: translate(50%, 50%) rotate(-360deg);
 }
 
 .modal-close-btn__icon {
@@ -58,11 +58,13 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     top: 8px;
     right: 8px;
+    transform: scale(1);
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
         fill: #2196f3;
+        transform: scale(1.1);
     }
 }
 
@@ -211,8 +213,11 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     outline: none;
     border-radius: 4px;
+    transform: scale(1);
+   
     &:hover,
     &:focus {
         background-color: #188ce8;
+        transform: scale(1.1);
     }
 }

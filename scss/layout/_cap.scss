@@ -64,9 +64,11 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1);
     &:hover,
     &:focus {
         color: #ffffff;
         background-color: #188ce8;
+        transform: scale(1.1);
     }
 }
